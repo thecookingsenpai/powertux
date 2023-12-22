@@ -1,5 +1,4 @@
-#screen -d -m autokey-qt # So that it does not spawn any window
-#screen -d -m conky # and customizations if needed
+#!/bin/bash
 
 echo "TCSenpai's Custom Script"
 echo "Active customizations:"
