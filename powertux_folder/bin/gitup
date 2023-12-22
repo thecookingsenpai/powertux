@@ -1,6 +1,6 @@
 #!/bin/bash
-echo $1
-cd $(pwd)
+echo "$1"
+cd $(pwd) || exit
 echo "Adding everything to the commit..."
 git add .
 git commit -a -m "$1"
@@ -13,4 +13,3 @@ git commit -a -m "Post trunk commit"
 echo "Pushing..."
 git push
 echo "Done!"
-

@@ -3,7 +3,6 @@
 THIS=$(pwd)
 CMD="PATH="
 CMD+='$PATH'
-CMD+=":$THIS"
-echo $CMD >> "$HOME/.bashrc"
-PATH=$PATH:$THIS
-
+CMD+=":${THIS}"
+echo "${CMD}" >>"${HOME}/.bashrc"
+PATH=${PATH}:${THIS}
